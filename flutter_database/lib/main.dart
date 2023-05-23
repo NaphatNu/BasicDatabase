@@ -42,6 +42,12 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Provider.of<TransectionProvider>(context,listen: false).initData();
+  }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
